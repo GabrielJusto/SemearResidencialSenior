@@ -1,8 +1,14 @@
+
+@font-face {   font-family: Myriad Pro Regular;  src: url(fonts/Myriad\ Pro\ Regular.ttf); font-weight:normal; font-size:24px; }
+
 :root{
     --azul-fundo: #080027;
     --amarelo-logo: #FECA01;
     --amarelo-selecionado:rgb(168, 136, 9);
     --verde-logo: #00A962;
+    --verde-logo-transparente: #00a963e5;
+    --laranja-logo :#c26700;
+    --transparente : #FFFFFF00;
 }
 
 body{
@@ -28,7 +34,7 @@ body{
   }
 
   .main {
-    margin-top: 100px; 
+    margin-top: 0; 
   }
 
   .item-menu{
@@ -40,14 +46,64 @@ body{
 
   .inicial-externa
   {
-    padding-top: 10%;
-    background-color: red;
     width: 100vw;
     height: 100vh;
   }
+  
+
+  section.bem-vindo{
+    background-image: url("images/fachada.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .inicial-meio{
+    height: 40%;
+    width: 40%;
+    padding: 1%;
+    background-color: var(--verde-logo-transparente);
+    
+    
+  }
   .inicial-interna{
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    background-color: var(--verde-logo);
+   
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--transparente);
+    border: solid;
+    border-width: 2px;
+    border-color: var(--amarelo-logo);
+
+    text-align: center;
+    color: white;
+   
+  }
+
+  
+  span.bem-vindo{
+    letter-spacing: 3px;
+    font-family: Myriad Pro Regular;
+    font-size: 15px;
+  }
+
+  h2.apresentacao{
+    
+    font-size: 35px;
+    font-family: Hasteristico;
+  }
+
+  button.botao-saiba-mais{
+    background-color: var(--transparente);
+    border: solid;
+    border-color: var(--amarelo-logo);
+    border-width: 2px;
+    color: var(--amarelo-logo);
+    padding: 5px;
+    transition: 500ms;
+  }
+
+  button.botao-saiba-mais:hover{
+    background-color: var(--amarelo-logo);
+    color: var(--azul-fundo);
   }
