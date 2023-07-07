@@ -73,7 +73,7 @@ body{
     background-color: var(--transparente);
     border: solid;
     border-width: 2px;
-    border-color: var(--amarelo-logo);
+    border-color: white;
 
     text-align: center;
     color: white;
@@ -96,14 +96,14 @@ body{
   button.botao-saiba-mais{
     background-color: var(--transparente);
     border: solid;
-    border-color: var(--amarelo-logo);
+    border-color: white;
     border-width: 2px;
-    color: var(--amarelo-logo);
+    color:white;
     padding: 5px;
     transition: 500ms;
   }
 
   button.botao-saiba-mais:hover{
-    background-color: var(--amarelo-logo);
+    background-color: white;
     color: var(--azul-fundo);
   }
