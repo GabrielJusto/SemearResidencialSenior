@@ -1,5 +1,4 @@
 
-@font-face {   font-family: Myriad Pro Regular;  src: url(fonts/Myriad\ Pro\ Regular.ttf); font-weight:normal; font-size:24px; }
 
 :root{
     --azul-fundo: #080027;
@@ -10,6 +9,9 @@
     --laranja-logo :#c26700;
     --transparente : #FFFFFF00;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     background-color: var(--azul-fundo);
@@ -18,25 +20,12 @@ body{
 *{
     margin: 0;
     padding: 0;
+    font-family: Andale Mono, monospace;
 }
 
 .bem-vindo{
     height: 100vh;
 }
-
-.semear-navbar {
-    padding-left: 25vw;
-    overflow: hidden;
-    background-color: var(--azul-fundo);
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-  }
-
-  .main {
-    margin-top: 0; 
-  }
-
   .item-menu{
     color: var(--amarelo-logo);
   }
@@ -46,7 +35,6 @@ body{
 
   .inicial-externa
   {
-    width: 100vw;
     height: 100vh;
   }
   
@@ -83,14 +71,12 @@ body{
   
   span.bem-vindo{
     letter-spacing: 3px;
-    font-family: Myriad Pro Regular;
     font-size: 15px;
   }
 
   h2.apresentacao{
     
     font-size: 35px;
-    font-family: Hasteristico;
   }
 
   button.botao-saiba-mais{
@@ -106,4 +92,80 @@ body{
   button.botao-saiba-mais:hover{
     background-color: white;
     color: var(--azul-fundo);
+  }
+
+
+
+  .quemsomos-esquerda{
+    margin: 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url("images/quemsomos1.png");
+    background-size: 100% 60vh;
+
+  }
+
+  .image-metas{
+    margin: 0;
+    height: 25vh;
+    width: 100%;
+    background-image: url("images/quemsomos1.png");
+    background-size: 100% 25vh;
+  }
+
+  p.quemsomos{
+    text-align: justify;
+    color: var(--amarelo-logo);
+    font-family: Andale Mono, monospace;
+    line-height: 24px;
+  }
+
+  .quemsomos-externa{
+    width: 100%;
+    height: 60vh;
+    color: white;
+    margin: 0px;
+  }
+
+  nav{
+    background-color: var(--azul-fundo);
+  }
+
+  .quemsomos-row{
+    margin: 0px;
+    width: 100%;
+  }
+  .quemsomos-meio{
+    padding-top: 10%;
+  }
+
+  .quemsomos-col{
+    padding: 0%;
+  }
+
+  h2.quemsomos{
+    letter-spacing: 2px;
+    padding-bottom: 13%;
+    margin-left: 5%;
+    color: var(--amarelo-logo);
+  }
+  h2.quemsomos::after{
+
+    content: "";
+    display: inline-block;  
+    width: 70px;
+    height: 10px;
+    background: var(--amarelo-selecionado);
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    top: 20%;
+  }
+
+  h3.metas{
+    letter-spacing: 2px;
+    padding-bottom: 8%;
+    margin-left: 5%;
+    margin-top: 10%;
+    color: var(--amarelo-logo);
   }
