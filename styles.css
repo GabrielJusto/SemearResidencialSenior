@@ -169,3 +169,44 @@ body{
     margin-top: 10%;
     color: var(--amarelo-logo);
   }
+
+  div.video-externo{
+    background-color: var(--verde-logo-transparente);
+    width: 80vw;
+    height: 90vh;
+    padding: 1%;
+    margin-left: 10vw;
+  }
+
+  div.video{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  div.apresentacao{
+    color: var(--amarelo-logo);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  div.localizacao-titulo{
+    color: var(--amarelo-logo);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  div.mapa-externo{
+    background-color: var(--verde-logo-transparente);
+    width: 100%;
+    height: 50vh;
+    padding: 1%;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }

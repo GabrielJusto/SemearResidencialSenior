@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-
+    <script type="module" src="index.ts"></script>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
                         <a class="nav-link item-menu" href="#apresentacao">Apresentação </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link item-menu" href="#">Serviços</a>
+                        <a class="nav-link item-menu" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link item-menu" href="#">Acomodações</a>
@@ -44,7 +43,7 @@
                         <a class="nav-link item-menu" href="#">Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link item-menu" href="#">Localização</a>
+                        <a class="nav-link item-menu" href="#localizacao">Localização</a>
                     </li>
                 </ul>
             </div>
@@ -111,7 +110,43 @@
             </div>
         </section>
         <section class="apresentacao" id="apresentacao">
-           
+            <div class="apresentacao">
+                <h2> Apresentacao</h2>
+            </div>
+            <div class="video-externo">
+                <div class="video">
+                    <iframe height="100%" width="100%"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+               </div>
+            </div>
+        </section>
+        <section id="servicos" class="servicos">
+
+        </section>
+        <section id="localizacao">
+            <div class="localizacao-titulo">
+                <h2> Localização</h2>
+            </div>
+            <div class="mapa-externo">
+                <div id="map"> </div>
+            </div>
+            <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                ({key: "AIzaSyB3C-zieZlZNMwlbBfjsmVjlUO33kt7qSA", v: "beta"});</script>
+          
+            
+            <div class="d-flex flex-row justify-content-between">
+                <div class="column">
+                    Endereco
+                </div>
+                <div class="column">
+                    Telefone
+                </div>
+                <div class="column">
+                    email
+                </div>
+
+            </div>
         </section>
     </div>
 </body>
