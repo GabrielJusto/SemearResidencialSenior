@@ -210,3 +210,70 @@ body{
     width: 100%;
     height: 100%;
   }
+
+  div.contato{
+    color: var(--amarelo-logo);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  h2.servicos{
+    letter-spacing: 2px;
+    padding-bottom: 13%;
+    margin-left: 5%;
+    color: var(--amarelo-logo);
+  }
+  h2.servicos::after{
+
+    content: "";
+    display: inline-block;  
+    width: 70px;
+    height: 10px;
+    background: var(--amarelo-selecionado);
+    left: 50%;
+    position: absolute;
+    margin-top: 60px;
+  }
+
+  div.servicos-externa{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  div.servico{
+    border: solid;
+    border-width: 0.5px;
+    border-collapse: inherit;
+    color: var(--amarelo-logo);
+    text-align: left;
+    margin-left: 10px;
+    padding: 30px;
+    
+  }
+ ul.servico > li{
+  background-color: var(--azul-fundo);
+  border-bottom: solid;
+  border-bottom-color: var(--amarelo-selecionado);
+  font-size: 12px;
+  text-align: center;
+ }
+
+
+  h4.servico{
+    margin-bottom: 60px;
+  }
+  h4.servico::after{
+
+    content: "";
+    display: inline-block;  
+    width: 70px;
+    height: 5px;
+    background: var(--amarelo-selecionado);
+    left: 40%;
+    position: absolute;
+    margin-top: 50px;
+  }
