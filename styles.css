@@ -23,6 +23,10 @@ body{
     font-family: Andale Mono, monospace;
 }
 
+section{
+  padding-top: 50px;
+}
+
 .bem-vindo{
     height: 100vh;
 }
@@ -170,10 +174,29 @@ body{
     color: var(--amarelo-logo);
   }
 
+
+  h2.video{
+    letter-spacing: 2px;
+    margin-left: 5%;
+    color: var(--amarelo-logo);
+  }
+  h2.video::after{
+
+    content: "";
+    display: inline-block;  
+    width: 70px;
+    height: 10px;
+    background: var(--amarelo-selecionado);
+    left: 50%;
+    position: absolute;
+    margin-top: 60px;
+  }
+
+
   div.video-externo{
     background-color: var(--verde-logo-transparente);
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
     padding: 1%;
     margin-left: 10vw;
   }
@@ -220,7 +243,7 @@ body{
 
   h2.servicos{
     letter-spacing: 2px;
-    padding-bottom: 13%;
+    padding-bottom: 5%;
     margin-left: 5%;
     color: var(--amarelo-logo);
   }
@@ -237,7 +260,7 @@ body{
   }
 
   div.servicos-externa{
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     margin-top: 50px;
     padding-left: 10%;
@@ -276,4 +299,43 @@ body{
     left: 40%;
     position: absolute;
     margin-top: 50px;
+  }
+
+  div.acomodacoes-externa{
+    text-align: center;
+  }
+
+  div.ambientes-externa{
+    color: white;
+    height: 100vh;
+    padding-left: 15%;
+    padding-top: 10%;
+    background-color: var(--verde-logo);
+  }
+  h2.ambiente{
+    padding-bottom: 10%;
+  }
+
+  h2.ambiente::after{
+
+    content: "";
+    display: inline-block;  
+    width: 70px;
+    height: 10px;
+    background: white;
+    left: 14.2%;
+    position: absolute;
+    margin-top: 3.5%;
+  }
+  ul.ambiente > li{
+    padding: 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--verde-logo);
+    border-bottom: solid;
+    border-bottom-color: white;
+    border-width: 2px;
+  }
+  ul.ambiente{
+    border: none;
   }
