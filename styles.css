@@ -253,7 +253,7 @@ section{
   }
 
   section.servicos{
-    background-color: var(--azul-fundo);
+    height: 100vh;
   }
 
   h2.servicos{
@@ -320,53 +320,10 @@ section{
   }
 
   section.ambientes{
-    background-color: var(--verde-logo);
-  }
-  div.ambientes-externa{
-    color: white;
     height: 100vh;
-    padding-left: 15%;
-    padding-top: 10%;
-    background-color: var(--verde-logo);
   }
-  h2.ambiente{
-    padding-bottom: 10%;
-  }
-
-  h2.ambiente::after{
-
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: white;
-    left: 5%;
-    position: absolute;
-    margin-top: 10%;
-  }
-
-  div.ambiente-col{
-    border: solid;
-    border-width: 1px;
-    border-color: white;
-    padding: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  ul.ambiente > li{
-    padding: 5px;
-    text-align: center;
-    border: none;
-    background-color: var(--verde-logo);
-    border-bottom: solid;
-    border-bottom-color: white;
-    border-width: 2px;
-  }
-  ul.ambiente{
-    border: none;
-  }
-
-
+ 
+  
   section.equipe{
     height: 100vh;
   }
