@@ -10,6 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="index.ts"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -188,7 +189,7 @@
         </section>
         <section id="acomodacoes" class="acomodacoes">
            <div class="acomodacoes-externa">
-                <h2 class="acomodacoes"> Acomodações</h4>
+                <h2 class="acomodacoes"> Acomodações</h2>
                     <div class="acomodacoes-texto">
                         <p class="acomodacoes">
                             O Semear Residencial Sênior disponibiliza suítes contemporâneas e aconchegantes para os seus hóspedes, 
@@ -234,39 +235,34 @@
            </div>
         </section>
         <section class="equipe" id="equipe">
-            <div class="equipe-externa">
+            <h2 class="equipe"> Equipe</h2>
+           <div class="container equipe-externa">
                 <div class="row">
-                    <div class="col-5 equipe-esquerda">
-                       
+                    <div class="col equipe-col">
+                        <div class="equipe-botao" onclick="abreEquipe('medicoDescricao')">
+                            Médicos
+                        </div>
+                        <div class="equipe-descricao" id="medicoDescricao">
+                            Lorem ipsum dolor sit amet. Eos eaque ipsum vel adipisci explicabo vel omnis dolorem qui molestiae eveniet. Est omnis explicabo ad velit saepe id 
+                            rerum sunt sit maiores earum hic blanditiis repudiandae.
+                        </div>
                     </div>
-                    <div class=" col-3 equipe">
-                       <h2 class="equipe"> Serviços de Saúde</h2>
-                       <ul class="servico">
-                        <li class="list-group-item">SUPORTE MÉDICO</li>
-                        <li class="list-group-item">NUTRICIONISTA</li>
-                        <li class="list-group-item">FISIOTERAPIA</li>
-                        <li class="list-group-item">FONOTERAPIA</li>
-                        <li class="list-group-item">TERAPIA OCUPACIONAL</li>
-                        <li class="list-group-item">PSICOLIGIA</li>
-                      </ul>
-                    </div>
-                    <div class="col-3 equipe">
-                        <h2 class="equipe"> Atividades</h2>
-                        <ul class="servico">
-                            <li class="list-group-item">ESPAÇO ECUMÊNICO</li>
-                            <li class="list-group-item">PASSEIOS PROGRAADOS</li>
-                            <li class="list-group-item">ATIVIDADES CULTURAIS</li>
-                            <li class="list-group-item">EDUCADOR FÍSICO</li>
-                            <li class="list-group-item">BIBLIOTECA</li>
-                            <li class="list-group-item">ESCOLA DE IDIOMAS</li>
-                            <li class="list-group-item">MUSICALISTA</li>
-                          </ul>
-                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col equipe-col">
+                        <div class="equipe-botao" onclick="abreEquipe('fisioDescricao')">
+                            Fisioterapia
+                        </div>
+                        <div class="equipe-descricao" id="fisioDescricao">
+                            Lorem ipsum dolor sit amet. Eos eaque ipsum vel adipisci explicabo vel omnis dolorem qui molestiae eveniet. Est omnis explicabo ad velit saepe id 
+                            rerum sunt sit maiores earum hic blanditiis repudiandae.
+                        </div>
+                    </div>
+                </div>
 
+           </div>
         </section>
-        <section id="localizacao">
+        <section class="localizacao" id="localizacao">
             <div class="localizacao-titulo">
                 <h2> Localização</h2>
             </div>

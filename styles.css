@@ -14,7 +14,7 @@ html {
 }
 
 body{
-    background-color: var(--azul-fundo);
+    background-color: white;
 }
 
 *{
@@ -213,7 +213,9 @@ section{
     height: 100%;
     
   }
-
+  section.apresentacao{
+    background-color: var(--azul-fundo);
+  }
   div.apresentacao{
     color: var(--amarelo-logo);
     text-align: center;
@@ -221,6 +223,9 @@ section{
     margin-bottom: 60px;
   }
 
+  section.localizacao{
+    background-color: var(--azul-fundo);
+  }
   div.localizacao-titulo{
     color: var(--amarelo-logo);
     text-align: center;
@@ -245,6 +250,10 @@ section{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  section.servicos{
+    background-color: var(--azul-fundo);
   }
 
   h2.servicos{
@@ -310,6 +319,9 @@ section{
     text-align: center;
   }
 
+  section.ambientes{
+    background-color: var(--verde-logo);
+  }
   div.ambientes-externa{
     color: white;
     height: 100vh;
@@ -355,52 +367,64 @@ section{
   }
 
 
-  div.equipe-externa{
-    height: 60vh;
-    color: var(--amarelo-logo);
+  section.equipe{
+    height: 100vh;
   }
-  div.equipe-esquerda{
-    background-color: var(--amarelo-logo);
-    height: 60vh;
-    margin: 0px;
-  }
-
   h2.equipe{
     text-align: center;
+    color: var(--verde-logo);
     width: 100%;
-    margin-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 4%;
   }
 
   h2.equipe::after{
-
+    
     content: "";
     display: inline-block;  
     width: 70px;
     height: 10px;
-    background: var(--amarelo-selecionado);
-    left: 40%;
+    background: var(--verde-logo);
+    left: 48.3%;
     position: absolute;
-    margin-top: 15%;
+    margin-top: 3.5%;
   }
 
-  div.equipe{
-    border: solid;
-    border-color: var(--amarelo-logo);
-    border-width: 1px;
-    margin-left: 2.5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  div.equipe-descricao{
+    display: none;
   }
 
-  ul.equipe{
-    background-color: var(--azul-fundo);
-    border-bottom: solid;
-    border-bottom-color: var(--amarelo-selecionado);
-    font-size: 16px;
+  div.equipe-botao{
+    width: 100%;
+    padding-bottom: 10px;
     text-align: center;
+    cursor: pointer;
+  }
+  div.equipe-col{
+    margin: 10px;
+    background-color: var(--verde-logo);
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
+  div.equipe-externa{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 40vw;
+    background-color: white;
+    border: solid;
+    border-color: var(--verde-logo);
+    border-radius: 10px;
+    color: black;
+  }
+
+  section.acomodacoes{
+    background-color: var(--azul-fundo);
+  }
   h2.acomodacoes{
     text-align: center;
     width: 100%;
