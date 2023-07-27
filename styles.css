@@ -253,7 +253,7 @@ section{
   }
 
   section.servicos{
-    height: 100vh;
+    height: 100%;
   }
 
   h2.servicos{
@@ -377,6 +377,7 @@ section{
     border-color: var(--verde-logo);
     border-radius: 10px;
     color: black;
+    margin-bottom: 15px;
   }
 
   section.acomodacoes{
