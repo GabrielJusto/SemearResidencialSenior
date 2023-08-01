@@ -334,22 +334,15 @@ section{
     padding-bottom: 4%;
   }
 
-  h2.equipe::after{
-    
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: var(--verde-logo);
-    left: 48.3%;
-    position: absolute;
-    margin-top: 3.5%;
-  }
+  
 
   div.equipe-descricao{
     display: none;
   }
 
+  div.contaoner-equipe{
+    margin: 50px;
+  }
   div.equipe-botao{
     width: 100%;
     padding-bottom: 10px;
@@ -371,7 +364,6 @@ section{
     padding-right: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
-    width: 40vw;
     background-color: white;
     border: solid;
     border-color: var(--verde-logo);
