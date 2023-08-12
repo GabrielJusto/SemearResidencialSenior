@@ -348,7 +348,8 @@ section{
     text-align: center;
     color: var(--verde-logo);
     width: 100%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+    margin-top: 4%;
   }
 
   
@@ -359,6 +360,9 @@ section{
 
   div.contaoner-equipe{
     margin: 50px;
+    border: solid;
+    border-color: var(--verde-logo);
+    border-radius: 10px;
   }
   div.equipe-botao{
     width: 100%;
@@ -382,9 +386,7 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: white;
-    border: solid;
-    border-color: var(--verde-logo);
-    border-radius: 10px;
+    
     color: black;
     margin-bottom: 15px;
   }
