@@ -113,7 +113,7 @@ section{
     left: 0;
     width: 100%;
     height: 80vh;
-    background-image: url(images/corredor.jpg);
+    background-image: url('images/corredor.jpg');
     opacity: 0.14;
     background-size: cover;
 
@@ -162,17 +162,6 @@ section{
     letter-spacing: 2px;
   }
 
-  h2.quemsomos::after{
-
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: white;
-    left: 47.9%;
-    position: absolute;
-    margin-top: 60px;
-  }
 
   div.quemsomos-row{
     text-align: left;
@@ -203,17 +192,7 @@ section{
     margin-left: 5%;
     color: var(--amarelo-logo);
   }
-  h2.video::after{
 
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: var(--amarelo-selecionado);
-    left: 50%;
-    position: absolute;
-    margin-top: 60px;
-  }
 
 
   div.video-externo{
@@ -266,6 +245,8 @@ section{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    cursor: pointer;
+    
   }
 
   section.servicos{
@@ -279,17 +260,7 @@ section{
     margin-left: 5%;
     color: var(--amarelo-logo);
   }
-  h2.servicos::after{
-
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: var(--amarelo-selecionado);
-    left: 50%;
-    position: absolute;
-    margin-top: 60px;
-  }
+ 
 
   div.servicos-externa{
     font-size: 14px;
@@ -320,17 +291,7 @@ section{
   h4.servico{
     margin-bottom: 60px;
   }
-  h4.servico::after{
 
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 5px;
-    background: var(--amarelo-selecionado);
-    left: 40%;
-    position: absolute;
-    margin-top: 50px;
-  }
 
   div.acomodacoes-externa{
     text-align: center;
@@ -379,6 +340,11 @@ section{
     padding-left: 10px;
     padding-right: 10px;
   }
+  div.equipe-col-img{
+    background-image: url('images/corredor.jpg');
+    height: 70vh;
+    background-size: cover;
+  }
 
   div.equipe-externa{
     padding-left: 5%;
@@ -400,17 +366,7 @@ section{
     padding-bottom: 4%;
   }
 
-  h2.acomodacoes::after{
-
-    content: "";
-    display: inline-block;  
-    width: 70px;
-    height: 10px;
-    background: var(--amarelo-selecionado);
-    left: 48.5%;
-    position: absolute;
-    margin-top: 3.5%;
-  }
+  
 
   div.acomodacoes-externa{
     color: var(--amarelo-logo);
@@ -426,6 +382,7 @@ section{
     border: solid;
     border-width: 1px;
     border-color: var(--amarelo-logo);
+    border-radius: 10px;
     margin-left: 15%;
     margin-right: 15%;
   }
