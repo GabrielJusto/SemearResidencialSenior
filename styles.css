@@ -44,17 +44,28 @@ section{
     background-size: 100%;
     height: 100%;
   }
-  
+  @media(max-width: 500px) {
+    .inicial-externa {
+      background-image: none;
+    }
+   }
 
 
   .inicial-meio{
-    height: 40%;
-    width: 40%;
+    height: 40vh;
+    width: 40vw;
     padding: 1%;
     background-color: var(--verde-logo-transparente);
     
     
   }
+  @media(max-width: 500px) {
+    .inicial-meio {
+      width: 60vw;
+    }
+   }
+
+
   .inicial-interna{
    
     height: 100%;
@@ -77,12 +88,32 @@ section{
   span.bem-vindo{
     letter-spacing: 3px;
     font-size: 15px;
+    transition: 500ms;
   }
+
+  @media(max-width: 900px) {
+    span.bem-vindo {
+     font-size: 10px;
+    }
+   }
+
 
   h2.apresentacao{
     
     font-size: 35px;
+    transition: 500ms;
   }
+  @media(max-width: 900px) {
+    h2.apresentacao {
+     font-size: 20px;
+    }
+   }
+   @media(max-width: 500px) {
+    h2.apresentacao {
+     font-size: 15px;
+    }
+   }
+   
 
   button.botao-saiba-mais{
     background-color: var(--transparente);
@@ -93,6 +124,12 @@ section{
     padding: 5px;
     transition: 500ms;
   }
+  
+  @media(max-width: 900px) {
+    button.botao-saiba-mais {
+     font-size: 10px;
+    }
+   }
 
   button.botao-saiba-mais:hover{
     background-color: white;
@@ -365,7 +402,7 @@ section{
 
   div.acomodacoes-externa{
     color: var(--amarelo-logo);
-    height: 70vh;
+    height: 80vh;
   }
 
   p.acomodacoes{
@@ -380,6 +417,7 @@ section{
     border-radius: 10px;
     margin-left: 15%;
     margin-right: 15%;
+    height: 70%;
   }
 
 
@@ -388,17 +426,25 @@ section{
     overflow: hidden;
     width: 50vw; 
     margin: 0 auto;
+    border-radius: 10px;
+
+    
   }
-  
+
+
   .carousel-slide {
     flex: 1;
-    width: 25vw;
+    width: 24vw;
+    height: 30vh;
     transition: transform 0.5s ease-in-out;
+    margin: 0.5vw;
     
   }
   
   .carousel-slide img {
-    width: 25vw;
+    width: 24vw;
+    height: 100%;
+    border-radius: 10px;
     
   }
   
