@@ -419,17 +419,30 @@ section{
     margin-right: 15%;
     height: 70%;
   }
+  
+  @media(max-width: 900px) {
+    div.acomodacoes-texto {
+      height: 70vh;
+    }
+
+   }
 
 
   .carousel-container {
+    margin: 0;
+    padding: 0;
     display: flex;
     overflow: hidden;
     width: 50vw; 
-    margin: 0 auto;
     border-radius: 10px;
 
     
   }
+  @media(max-width: 500px) {
+    .carousel-container {
+      margin: auto;
+    }
+   }
 
 
   .carousel-slide {
@@ -440,6 +453,8 @@ section{
     margin: 0.5vw;
     
   }
+
+
   
   .carousel-slide img {
     width: 24vw;
@@ -459,6 +474,12 @@ section{
     padding: 5px;
     transition: 500ms;
   }
+  @media(max-width: 500px) {
+    .carousel-prev, .carousel-next {
+      font-size: 9px;
+      margin: auto;
+    }
+   }
 
   .carousel-prev:hover, .carousel-next:hover{
     background-color: var(--amarelo-logo);
@@ -466,6 +487,14 @@ section{
   }
 
   div.botao-carousel{
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
+  @media(max-width: 600px) {
+    div.botao-carousel{
+      margin: auto;
+    }
+   }
