@@ -1,267 +1,263 @@
-
-
 :root{
-    --azul-fundo: #080027;
-    --amarelo-logo: #FECA01;
-    --amarelo-selecionado:rgb(168, 136, 9);
-    --verde-logo: #00A962;
-    --verde-logo-transparente: #00a963e5;
-    --laranja-logo :#c26700;
-    --transparente : #FFFFFF00;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-    background-color: white;
+  --azul-fundo: #080027;
+  --amarelo-logo: #FECA01;
+  --amarelo-selecionado:rgb(168, 136, 9);
+  --verde-logo: #00A962;
+  --verde-logo-transparente: #00a963e5;
+  --laranja-logo :#c26700;
+  --transparente : #FFFFFF00;
+  --whats-green : #25d366;
+  --cinza-fundo: rgb(235, 235, 235);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Andale Mono, monospace;
+
+div.cabecalho{
+  background-color: var(--azul-fundo);
+  height: 7vh;
+  color: white;
 }
 
-section{
-  padding-top: 11vh;
+div.cabecalho div.row{
+  height: 100%;
 }
 
-.bem-vindo{
-    height: 100vh;
+
+h4.slogan{
+  font-size: 16px;
 }
-  .item-menu{
-    color: var(--amarelo-logo);
+@media (max-width: 500px) {
+  h4.slogan {
+      font-size: 12px;
   }
-  .item-menu:hover{
-    color: var(--amarelo-selecionado);
+}
+
+p.whatsapp{
+  margin: auto;
+}
+@media (max-width: 500px) {
+  p.whatsapp {
+      margin-top: 1vh;
   }
+}
 
-  .inicial-externa
-  {
-    background-image: url("images/fachada.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-  }
-  @media(max-width: 500px) {
-    .inicial-externa {
-      background-image: none;
-    }
-   }
-
-
-  .inicial-meio{
-    height: 40vh;
-    width: 40vw;
-    padding: 1%;
-    background-color: var(--verde-logo-transparente);
-    
-    
-  }
-  @media(max-width: 500px) {
-    .inicial-meio {
-      width: 60vw;
-    }
-   }
-
-
-  .inicial-interna{
-   
-    height: 100%;
-    width: 100%;
-
-    background-color: var(--transparente);
-    border: solid;
-    border-width: 2px;
-    border-color: white;
-
-    text-align: center;
-    color: white;
-   
-  }
-
-  nav{
-    background-color: var(--azul-fundo);
-  }
+div.whatsapp{
+  background-color: var(--whats-green);
   
-  span.bem-vindo{
-    letter-spacing: 3px;
-    font-size: 15px;
-    transition: 500ms;
+  height: 3vh;
+  width: 100%;
+  max-width: 150px;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  border-radius: 20px;
+  color: white;
+}
+@media (max-width: 500px) {
+  div.whatsapp {
+      font-size: 8px;
+      max-width: 100px;
   }
+}
 
-  @media(max-width: 900px) {
-    span.bem-vindo {
-     font-size: 10px;
-    }
-   }
-
-
-  h2.apresentacao{
-    
-    font-size: 35px;
-    transition: 500ms;
+p.endereco{
+  font-size: 14px;
+  color: white;
+}
+@media (max-width: 500px) {
+  p.endereco {
+      font-size: 10px;
   }
-  @media(max-width: 900px) {
-    h2.apresentacao {
-     font-size: 20px;
-    }
-   }
-   @media(max-width: 500px) {
-    h2.apresentacao {
-     font-size: 15px;
-    }
-   }
-   
+}
 
-  button.botao-saiba-mais{
-    background-color: var(--transparente);
-    border: solid;
-    border-color: white;
-    border-width: 2px;
-    color:white;
-    padding: 5px;
-    transition: 500ms;
-  }
+
+button.agende{
   
-  @media(max-width: 900px) {
-    button.botao-saiba-mais {
-     font-size: 10px;
-    }
-   }
+  background-color: var(--verde-logo);
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 1% 10% 1% 10%;
+  width: 60vw;
+  color: white;
+  font-weight: bold;
+}
 
-  button.botao-saiba-mais:hover{
-    background-color: white;
-    color: var(--azul-fundo);
-  }
+div.titulo-apresentacao{
+  margin: 10% 15% 5% 15%;
+  color: var(--azul-fundo);
+  text-decoration: underline;
+}
 
-
-  section.quemsomos{
-    background-color: white;
-    color: black;
-    margin-bottom: 5%;
-   
-    
-  }
-  section.quemsomos::before{
-    content: "";
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    background-image: url('images/corredor.jpg');
-    opacity: 0.14;
-    background-size: cover;
-
+div.texto-apresentacao{
+  margin: 10% 15% 5% 15%;
+  color: var(--azul-fundo);
+  text-align: justify;
  
-  }
-  .quemsomos-esquerda{
-    margin: 0;
-    height: 60vh;
-    width: 100%;
+  
+}
 
-  }
+div.apresentacao-container{
+  margin-top: 20%;
+  background-size: 100%;
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../images/ambiente\ \(9\).jpeg'); 
 
-  .image-metas{
-    margin: 0;
-    height: 25vh;
-    width: 100%;
-  }
-
-  p.quemsomos{
-    text-align: justify;
-    font-family: Andale Mono, monospace;
-    line-height: 24px;
-  }
-
-  .quemsomos-externa{
-    opacity: 1;
-    width: 100%;
-    margin: 0px;
-    
-    
-  }
-
-  div.quemsomos-titulo{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  h2.quemsomos{
-    letter-spacing: 2px;
-  }
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
 
-  div.quemsomos-row{
-    text-align: left;
-    margin: 0;
-  }
+div.separador{
+  background-color: var(--verde-logo);
+}
 
-  div.quemsomos-col{
-    border: solid;
-    border-color: black;
-    margin: 10px;
-    padding: 25px;
-    border-radius: 10px;
+ul.equipe{
+  list-style-type:none;
+}
+
+ul.equipe li{
+  margin-top: 2%;
+}
+
+div.resumo{
+  width: 50%;
+  height: 10px;
+  margin: 20px 0 20px 0;
+}
+
+div.texto-resumo{
+  text-align: justify;
+  
+}
+
+@media (max-width: 565px) {
+  div.col-resumo{
+      background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../images/ambiente\ \(9\).jpeg'); 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 10px;
   }
-  h4.quemsomos-subtitulo{
-    text-align: center;
+}
+
+div.botao-resumo{
+  margin: 10%;  
+}
+button.resumo{
+  width: 100%;
+}
+
+div.container-resumo{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+img.imagem-resumo{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.servicos{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+div.container-servicos{
+  background-color: var(--cinza-fundo);
+  margin: 0;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  color: var(--azul-fundo);
+  font-weight: bold;
+}
+
+div.separador-servicos{
+  width: 50%;
+  height: 10px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+div.lista-servicos{
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media (max-width: 925px) {
+  div.lista-servicos {
+      margin-left: 1%;
+      margin-right: 1%;
   }
- 
-  h3.metas{
-    letter-spacing: 2px;
-    padding-bottom: 8%;
-    margin-left: 5%;
-    margin-top: 10%;
+}
+
+div.botao-servicos{
+  margin-top: 5%;
+}
+ul.servicos{
+  list-style-type:none;
+}
+
+ul.servicos li{
+  margin-top: 5%;
+}
+
+div.container-estrutura{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.separador-estrutura{
+  width: 30%;
+  height: 10px;
+  margin: 2% 0 2% 0 ;
+}
+h2.estrutura{
+  margin-left: 0;
+  margin-top: 5%;
+}
+
+img.estrutura{
+  border-radius: 10px;
+}
+
+div.imagem{
+  margin-bottom: 2%;
+}
+
+div.botao-estrutura{
+  margin: 5% 10% 5% 10%;
+}
+
+div.container-rodape{
+  background-color: var(--azul-fundo);
+  height: 7vh;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1%;
+}
+
+p.texto-final{
+  width: 35vw;
+  margin: auto;
+  font-weight: bold;
+  text-align: justify;
+}
+
+div.container-final{
+ background-color: var(--cinza-fundo);
+ padding-top: 4%;
+ padding-bottom: 4%;
+}
+
+@media (max-width: 700px) {
+  p.texto-final {
+      font-size: 10px;
+      width: 70vw;
   }
+}
 
 
-  h2.video{
-    letter-spacing: 2px;
-    margin-left: 5%;
-    color: var(--amarelo-logo);
-  }
 
-
-
-  div.video-externo{
-    background-color: var(--verde-logo-transparente);
-    width: 80vw;
-    height: 80vh;
-    padding: 1%;
-    margin-left: 10vw;
-  }
-
-  div.video{
-    width: 100%;
-    height: 100%;
-    
-  }
-  section.apresentacao{
-    background-color: var(--azul-fundo);
-  }
-  div.apresentacao{
-    color: var(--amarelo-logo);
-    text-align: center;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  section.localizacao{
-    background-color: var(--azul-fundo);
-  }
-  div.localizacao-titulo{
-    color: var(--amarelo-logo);
-    text-align: center;
-    width: 100%;
-    margin-bottom: 60px;
-  }
 
   div.mapa-externo{
-    background-color: var(--verde-logo-transparente);
     width: 100%;
     height: 50vh;
     padding: 1%;
@@ -272,229 +268,4 @@ section{
     height: 100%;
   }
 
-  div.contato{
-    color: var(--amarelo-logo);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    
-  }
 
-  section.servicos{
-    height: 100%;
-    
-  }
-
-  h2.servicos{
-    letter-spacing: 2px;
-    padding-bottom: 5%;
-    margin-left: 5%;
-    color: var(--amarelo-logo);
-  }
- 
-
-  div.servicos-externa{
-    font-size: 14px;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  div.servico{
-    border: solid;
-    border-width: 0.5px;
-    border-collapse: inherit;
-    color: var(--amarelo-logo);
-    text-align: left;
-    margin-left: 10px;
-    padding: 30px;
-    
-  }
- ul.servico > li{
-  background-color: var(--azul-fundo);
-  border-bottom: solid;
-  border-bottom-color: var(--amarelo-selecionado);
-  font-size: 12px;
-  text-align: center;
- }
-
-
-  h4.servico{
-    margin-bottom: 60px;
-  }
-
-
-  div.acomodacoes-externa{
-    text-align: center;
-  }
-
-  section.ambientes{
-    height: 100vh;
-  }
- 
-  
-  section.equipe{
-    height: 100vh;
-  }
-  h2.equipe{
-    text-align: center;
-    color: var(--verde-logo);
-    width: 100%;
-    padding-bottom: 2%;
-    margin-top: 4%;
-  }
-
-  
-
-  div.equipe-descricao{
-    display: none;
-  }
-
-  div.contaoner-equipe{
-    margin: 50px;
-    border: solid;
-    border-color: var(--verde-logo);
-    border-radius: 10px;
-  }
-  div.equipe-botao{
-    width: 100%;
-    padding-bottom: 10px;
-    text-align: center;
-    cursor: pointer;
-  }
-  div.equipe-col{
-    margin: 10px;
-    background-color: var(--verde-logo);
-    border-radius: 10px;
-    width: 100%;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  div.equipe-col-img{
-    background-image: url('images/corredor.jpg');
-    height: 70vh;
-    background-size: cover;
-  }
-
-  div.equipe-externa{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: white;
-    
-    color: black;
-    margin-bottom: 15px;
-  }
-
-  section.acomodacoes{
-    background-color: var(--azul-fundo);
-  }
-  h2.acomodacoes{
-    text-align: center;
-    width: 100%;
-    padding-bottom: 4%;
-  }
-
-  
-
-  div.acomodacoes-externa{
-    color: var(--amarelo-logo);
-    height: 80vh;
-  }
-
-  p.acomodacoes{
-    margin: 3%;
-    text-align: left;
-  }
-
-  div.acomodacoes-texto{
-    border: solid;
-    border-width: 1px;
-    border-color: var(--amarelo-logo);
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 70%;
-  }
-  
-  @media(max-width: 900px) {
-    div.acomodacoes-texto {
-      height: 70vh;
-    }
-
-   }
-
-
-  .carousel-container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    overflow: hidden;
-    width: 50vw; 
-    border-radius: 10px;
-
-    
-  }
-  @media(max-width: 500px) {
-    .carousel-container {
-      margin: auto;
-    }
-   }
-
-
-  .carousel-slide {
-    flex: 1;
-    width: 24vw;
-    height: 30vh;
-    transition: transform 0.5s ease-in-out;
-    margin: 0.5vw;
-    
-  }
-
-
-  
-  .carousel-slide img {
-    width: 24vw;
-    height: 100%;
-    border-radius: 10px;
-    
-  }
-  
-  .carousel-prev, .carousel-next {
-    display: block;
-    margin: 10px auto;
-    background-color: var(--transparente);
-    border: solid;
-    border-color: var(--amarelo-logo);
-    border-width: 2px;
-    color:var(--amarelo-logo);
-    padding: 5px;
-    transition: 500ms;
-  }
-  @media(max-width: 500px) {
-    .carousel-prev, .carousel-next {
-      font-size: 9px;
-      margin: auto;
-    }
-   }
-
-  .carousel-prev:hover, .carousel-next:hover{
-    background-color: var(--amarelo-logo);
-    color: var(--azul-fundo);
-  }
-
-  div.botao-carousel{
-    margin: 0;
-    padding: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  @media(max-width: 600px) {
-    div.botao-carousel{
-      margin: auto;
-    }
-   }
