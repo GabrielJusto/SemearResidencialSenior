@@ -233,6 +233,18 @@ div.container-rodape{
   text-align: center;
   padding-top: 1%;
 }
+@media (max-width: 700px) {
+  div.container-rodape {
+      font-size: 4px;
+      
+  }
+}
+@media (max-width: 700px) {
+  div.email {
+      font-size: 9px;
+      
+  }
+}
 
 p.texto-final{
   width: 35vw;
