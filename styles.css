@@ -74,10 +74,16 @@ button.agende{
   background-color: var(--verde-logo);
   border-radius: 10px;
   border-width: 0px;
-  padding: 1% 10% 1% 10%;
-  width: 60vw;
+  padding: 0.5% 10% 0.5% 10%;
+  width: 40vw;
+  height: 7vh;
   color: white;
   font-weight: bold;
+}
+@media (max-width: 700px) {
+  button.agende {
+      font-size: 13px;
+  }
 }
 
 div.titulo-apresentacao{
